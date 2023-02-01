@@ -42,7 +42,5 @@ Route::get('/new_cat', function () {
 Route::get('/del_cat', function () {
     return Category::all()->map(function ($category) {
         $category->delete();
-        //
-        //
     });
 });
